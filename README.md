@@ -10,7 +10,7 @@ A built-in AI Assistant (powered by Qwen-Turbo) allows users to ask natural-lang
 “What is the average toxicity?”
 
 ### Project Architecture
-graph TD
+```graph TD
 A[Data Acquisition Layer] --> B[Preprocessing & Cleaning]
 B --> C[Sentiment & Emotion Analysis]
 C --> D[Data Integration & Export]
@@ -56,7 +56,7 @@ Discuss overall trends and dataset summary
 
 Respond conversationally in natural language
 
-###Qwen Assistant Logic
+### Qwen Assistant Logic
 How it works:
 
 Loads final_ai_attitudes.csv from /data/processed
@@ -82,7 +82,7 @@ Qwen interprets context + question → returns natural analytical answers
 ### How to Run
 1. Install Dependencies
 bash
-`pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 3. Set up DashScope API Key
 
@@ -91,15 +91,15 @@ Get your API key from: https://dashscope.aliyun.com
 Then set it in your environment:
 
 On Windows PowerShell:
-`setx DASHSCOPE_API_KEY "your_actual_api_key_here"
+`setx DASHSCOPE_API_KEY "your_actual_api_key_here"`
 
 On macOS/Linux:
-export DASHSCOPE_API_KEY="your_actual_api_key_here"
+`export DASHSCOPE_API_KEY="your_actual_api_key_here"`
 
 3. Launch the Streamlit App
 bash
 `cd dashboard
-`streamlit run app.py
+streamlit run app.py`
 
 ### Dashboard Overview
 Section	Description
