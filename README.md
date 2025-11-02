@@ -9,16 +9,16 @@ A built-in AI Assistant (powered by Qwen-Turbo) allows users to ask natural-lang
 “Compare Reddit and Twitter sentiment.”
 “What is the average toxicity?”
 
-### Project Architecture
-```graph TD
+# Project Architecture
+`graph TD
 A[Data Acquisition Layer] --> B[Preprocessing & Cleaning]
 B --> C[Sentiment & Emotion Analysis]
 C --> D[Data Integration & Export]
 D --> E[Interactive Streamlit Dashboard]
-E --> F[Qwen Turbo Chat Assistant]
+E --> F[Qwen Turbo Chat Assistant]`
 
 
-### Features
+# Features
 1. Sentiment Analysis
 
 Sentiment labels (positive, neutral, negative) generated per platform
@@ -56,7 +56,7 @@ Discuss overall trends and dataset summary
 
 Respond conversationally in natural language
 
-### Qwen Assistant Logic
+# Qwen Assistant Logic
 How it works:
 
 Loads final_ai_attitudes.csv from /data/processed
@@ -79,7 +79,7 @@ Generation.call(model="qwen-turbo", prompt=prompt)
 
 Qwen interprets context + question → returns natural analytical answers
 
-### How to Run
+# How to Run
 1. Install Dependencies
 bash
 `pip install -r requirements.txt`
@@ -101,20 +101,20 @@ bash
 `cd dashboard
 streamlit run app.py`
 
-### Dashboard Overview
+# Dashboard Overview
 Section	Description
 Sentiment Distribution	Bar chart comparing positive, neutral, and negative shares
 Emotion Breakdown	Pie or stacked chart of emotion categories (if available)
 Toxicity vs Sentiment	Scatter plot showing relationship between toxicity and sentiment
 Top Topics	Bar chart of most discussed AI-related topics
 Qwen Turbo Assistant	Interactive chat to explore and interpret results
-### Example Queries (Try These!)
+# Example Queries (Try These!)
 Query	Example Answer
 “Which platform is most positive?”	Hacker News has the highest positive sentiment and lowest toxicity.
 “Compare Reddit and Twitter.”	Reddit is more balanced, while Twitter shows higher toxicity.
 “What’s the average toxicity?”	The average toxicity across all platforms is 0.01.
 “What is the overall sentiment?”	Most discussions are neutral, showing balanced public opinion.
-### Tech Stack
+# Tech Stack
 Category	Tools / Frameworks
 Language	Python 3.11
 Frontend	Streamlit
@@ -127,7 +127,7 @@ Detailed platform-level statistics:
 • Twitter: positive=0.45, neutral=0.38, negative=0.17, avg_toxicity=0.025
 • Hacker News: positive=0.57, neutral=0.30, negative=0.13, avg_toxicity=0.009
 
-### Insights
+# Insights
 
 Hacker News tends to have the most optimistic discussions about AI.
 
@@ -135,5 +135,5 @@ Twitter has the highest proportion of negative posts and slightly higher toxicit
 
 Reddit is more balanced and diverse in sentiment topics.
 
-### Authors
+# Authors
 Riza Kabdolla, Ardak Islam, Kamila Nurlybayeva
