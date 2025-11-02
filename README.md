@@ -79,25 +79,27 @@ Generation.call(model="qwen-turbo", prompt=prompt)
 
 Qwen interprets context + question → returns natural analytical answers
 
-How to Run
+### How to Run
 1. Install Dependencies
-pip install -r requirements.txt
+bash
+`pip install -r requirements.txt
 
-2. Set up DashScope API Key
+3. Set up DashScope API Key
 
 Get your API key from: https://dashscope.aliyun.com
 
 Then set it in your environment:
 
 On Windows PowerShell:
-setx DASHSCOPE_API_KEY "your_actual_api_key_here"
+`setx DASHSCOPE_API_KEY "your_actual_api_key_here"
 
 On macOS/Linux:
 export DASHSCOPE_API_KEY="your_actual_api_key_here"
 
 3. Launch the Streamlit App
-cd dashboard
-streamlit run app.py
+bash
+`cd dashboard
+`streamlit run app.py
 
 ### Dashboard Overview
 Section	Description
