@@ -9,15 +9,6 @@ A built-in AI Assistant (powered by Qwen-Turbo) allows users to ask natural-lang
 “Compare Reddit and Twitter sentiment.”
 “What is the average toxicity?”
 
-# Project Architecture
-`graph TD
-A[Data Acquisition Layer] --> B[Preprocessing & Cleaning]
-B --> C[Sentiment & Emotion Analysis]
-C --> D[Data Integration & Export]
-D --> E[Interactive Streamlit Dashboard]
-E --> F[Qwen Turbo Chat Assistant]`
-
-
 # Features
 1. Sentiment Analysis
 
@@ -126,14 +117,6 @@ Detailed platform-level statistics:
 • Reddit: positive=0.48, neutral=0.42, negative=0.10, avg_toxicity=0.013
 • Twitter: positive=0.45, neutral=0.38, negative=0.17, avg_toxicity=0.025
 • Hacker News: positive=0.57, neutral=0.30, negative=0.13, avg_toxicity=0.009
-
-# Insights
-
-Hacker News tends to have the most optimistic discussions about AI.
-
-Twitter has the highest proportion of negative posts and slightly higher toxicity.
-
-Reddit is more balanced and diverse in sentiment topics.
 
 # Authors
 Riza Kabdolla, Ardak Islam, Kamila Nurlybayeva
