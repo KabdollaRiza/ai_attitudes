@@ -98,8 +98,8 @@ On macOS/Linux:
 
 3. Launch the Streamlit App
 bash
-`cd dashboard
-streamlit run app.py`
+`cd dashboard`
+`streamlit run app.py`
 
 # Dashboard Overview
 Section	Description
