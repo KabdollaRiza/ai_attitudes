@@ -1,0 +1,15 @@
+Project: Public Attitudes Toward Artificial Intelligence
+Goal: Analyze public opinions and emotions about AI across Reddit, Twitter, and Hacker News.
+Technologies:
+  - Python, Pandas, and Plotly for data analysis and visualization
+  - Streamlit for interactive dashboard
+  - Qwen Turbo API + LangGraph for conversational insights
+  - Hugging Face sentiment and emotion models
+  - Optional: BERTopic for topic modeling
+Pipeline:
+  1. Data acquisition from Reddit, Twitter (X), and Hacker News
+  2. Cleaning and preprocessing
+  3. Sentiment, emotion, and toxicity scoring
+  4. Topic extraction
+  5. Aggregation and visualization in dashboard
+  6. Conversational Q&A with LangGraph + Qwen Turbo
